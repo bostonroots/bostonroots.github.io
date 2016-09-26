@@ -1,4 +1,5 @@
 body {
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0;
   margin: 0;
@@ -8,10 +9,16 @@ body {
 #navbar {
   padding: 1.5em 8em;
   box-shadow: 0 0 1em rgba(84, 82, 82, 0.51);
-  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
   z-index: 1;
   overflow: auto;
   zoom: 1; }
+  @media (max-width: 800px) {
+    #navbar {
+      padding: 1em 0.5em; } }
   #navbar ul {
     margin: 0;
     padding: 0;
@@ -19,21 +26,52 @@ body {
   #navbar li {
     float: left;
     list-style: none;
-    padding: 0 1em; }
+    padding: 0 1em;
+    margin: 0.25em 0; }
+    @media (max-width: 800px) {
+      #navbar li {
+        padding: 0 0.5em; } }
   #navbar a {
     text-decoration: none;
-    color: #8dcd5f; }
+    color: #4fc357; }
     #navbar a:hover {
       text-decoration: underline; }
+  #navbar #links {
+    float: right; }
+    @media (max-width: 800px) {
+      #navbar #links {
+        float: left; } }
 
-.align-right {
-  float: right; }
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+#get-involved {
+  padding: 1em 2em;
+  border-radius: 4px;
+  background-color: #61acfb;
+  color: white;
+  border: none;
+  font-weight: bold;
+  display: block;
+  margin: 2em 0; }
 
 #home {
-  background-color: #aad664;
-  color: white; }
+  background-color: #7dc650;
+  background-image: url(/images/books.jpg);
+  background-size: cover;
+  color: white;
+  padding: 3em 0em;
+  padding-top: 6em; }
+  @media (max-width: 800px) {
+    #home {
+      padding-top: 8em; } }
 
 .content {
-  width: 40em;
+  box-sizing: border-box;
+  max-width: 40em;
   margin: 0 auto;
-  padding: 1em; }
+  padding: 0em 1em;
+  padding-top: 1em; }
+
+p {
+  line-height: 1.4em; }
