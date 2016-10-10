@@ -1,4 +1,4 @@
-$ui-color: rgb(79, 195, 87);
+$ui-color: rgb(122, 193, 111);
 $header-bg-color: rgb(125, 198, 80);
 $call-to-action: rgb(97, 172, 251);
 $text-color: rgb(66, 66, 66);
@@ -64,32 +64,26 @@ body {
   }
 }
 
-button {
-  font-family: $font;
-}
-
 #get-involved {
+  display: inline-block;
+  font-family: $font;
   padding: 1em 2em;
   border-radius: 4px;
   background-color: $call-to-action;
   color: $header-color;
   border: none;
   font-weight: bold;
-  display: block;
   margin: 2em 0;
+  text-decoration: none;
 }
-
 
 #home {
   background-color: $header-bg-color;
-  background-image: url(/images/books.jpg);
+  background-image: url(/images/books.jpeg);
   background-size: cover;
   color: $header-color;
   padding: 3em 0em;
-  padding-top: 6em;
-  @media (max-width: $smaller-screens) {
-    padding-top: 8em;
-  }
+  padding-top: 8em;
 }
 
 .content {
@@ -100,6 +94,56 @@ button {
   padding-top: 1em;
 }
 
+.side-image {
+  padding-right: 1em;
+  width: 33%;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  @media (max-width: $smaller-screens) {
+    width: 50%;
+  }
+}
+
+.side-text {
+  box-sizing: border-box;
+  float: left;
+  width: 66%;
+  @media (max-width: $smaller-screens) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.description {
+  @media (max-width: $smaller-screens) {
+    float: left;
+    width: 50%;
+  }
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 2em;
+  @include clearfix();
+}
+
 p {
   line-height: 1.4em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#contact {
+  margin-bottom: 6em;
+}
+
+.green {
+  color: $ui-color;
+}
+
+#footer {
+  padding: 1em;
+  margin-bottom: 6em;
 }
