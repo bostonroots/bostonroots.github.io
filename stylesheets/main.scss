@@ -1,12 +1,13 @@
-$ui-color: rgb(122, 193, 111);
-$header-bg-color: rgb(125, 198, 80);
+$ui-color: rgb(62, 149, 48);
+$header-bg-color: rgb(76, 163, 22);
 $call-to-action: rgb(97, 172, 251);
 $text-color: rgb(66, 66, 66);
 $header-color: rgb(255, 255, 255);
 
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font: Charter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif-font: Charter, Georgia, "Times New Roman", "Times", serif;
 
-$smaller-screens: 800px;
+$smaller-screens: 930px;
 
 @mixin clearfix {
   overflow: auto;
@@ -86,11 +87,19 @@ body {
   padding-top: 8em;
 }
 
-.content {
+.top-content {
   box-sizing: border-box;
   max-width: 40em;
   margin: 0 auto;
-  padding: 0em 1em;
+  padding: 0em 1.5em;
+  padding-top: 1em;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 46em;
+  margin: 0 auto;
+  padding: 0em 1.5em;
   padding-top: 1em;
 }
 
@@ -130,7 +139,8 @@ body {
 }
 
 p {
-  line-height: 1.4em;
+  font-family: $serif-font;
+  line-height: 1.5em;
   margin: 0;
   margin-bottom: 1em;
 }
