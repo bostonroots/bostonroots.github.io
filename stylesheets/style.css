@@ -8,7 +8,7 @@ body {
 
 #navbar {
   padding: 1.5em 8em;
-  box-shadow: 0 0 1em rgba(84, 82, 82, 0.51);
+  box-shadow: 0 0 1em rgba(56, 56, 56, 0.7);
   background-color: white;
   box-sizing: border-box;
   width: 100%;
@@ -121,4 +121,5 @@ p {
 
 #footer {
   padding: 1em;
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  text-align: center; }
